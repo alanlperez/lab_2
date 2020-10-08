@@ -68,9 +68,9 @@ module control (
 			
 			NOP: //Not in Lab Manual, but needed to make life easier for final implementation
 			begin  
-				EX <=4'b1000;  //replicating operator 
-				M <=3'b000; 
-				WB <=2'b00;
+				EX <=4'{1'b0};  //replicating operator 
+				M <=3'{1'b0}; 
+				WB <=2'{1'b0};
 			end
 			default:	$display ("Opcode not recognized.");
 		endcase
